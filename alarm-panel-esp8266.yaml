@@ -46,8 +46,8 @@ substitutions:
   warning_beep_pulse_time: 100ms
   warning_beep_pause_time: 130ms
   warning_beep_name: Warning Beep
-  warning_beep_shared: "true"
-  alarm_pin_shared: "true"
+  warning_beep_shared: "false"
+  alarm_pin_shared: "false"
   blink_on_state: "true"
 
   ####
@@ -65,7 +65,7 @@ substitutions:
   
   ####
   # CONNECTION MAPPINGS
-  warning_beep_pin: $out
+  warning_beep_pin: $zone5
 
 ####
 # PACKAGES
@@ -88,7 +88,7 @@ packages:
       - packages/alarm-panel/zone2.yaml
       - packages/alarm-panel/zone3.yaml
       - packages/alarm-panel/zone4.yaml
-      - packages/alarm-panel/zone5.yaml
+#     - packages/alarm-panel/zone5.yaml
       - packages/alarm-panel/zone6.yaml
       - packages/alarm-panel/alarm.yaml
     
