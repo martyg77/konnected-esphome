@@ -73,9 +73,10 @@ substitutions:
 packages:
 
   remote_package:
-    url: https://github.com/konnected-io/konnected-esphome
-    ref: master
-    refresh: 5min
+    url: file:///home/martyg/Git/konnected-esphome
+    ref: zone5-buzzer
+    refresh: 0d # Forces update from local git on every compile
+
     files:
 
       ####
