@@ -1,0 +1,29 @@
+
+output:
+  - id: buzzer
+    platform: gpio
+    pin:
+      number: $warning_beep_pin
+      allow_other_uses: $warning_beep_shared
+
+script:
+  - id: error_tone
+    then:
+      - repeat:
+          count: 3
+          then:
+            - repeat:
+                count: 4
+                then:
+                  - output.turn_on: buzzer
+                  - delay: 100ms
+                  - output.turn_off: buzzer
+                  - delay: 100ms
+            - delay: 200ms
+
+button:
+  - platform: template
+    name: Piezo Buzzer
+    on_press:
+      - script.execute: error_tone
+

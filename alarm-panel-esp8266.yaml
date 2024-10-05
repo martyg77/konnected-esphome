@@ -105,9 +105,7 @@ packages:
       ####
       # WARNING BEEP
       # Enables a 'Warning Beep' entity, intended to be used with a piezo buzzer or other pulsing.
-      # binary output This is implemented using the light component with strobe effect to create a 
-      # repeated beeping sound or pulsing action that can be turned on via the _strobe_ effect.
-      - packages/warning-beep.yaml
+      - packages/buzzer.yaml
 
 dashboard_import:
   package_import_url: github://konnected-io/konnected-esphome/alarm-panel-esp8266.yaml@master
