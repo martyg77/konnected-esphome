@@ -134,3 +134,8 @@ logger:
 # Enables the native API for Home Assistant
 # more: https://esphome.io/components/api.html
 api:
+
+wifi:
+  use_address: konnected-9b85f3
+  domain: .goodbit.net # Defaults to .local
+
