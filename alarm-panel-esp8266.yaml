@@ -138,6 +138,5 @@ logger:
 api:
 
 wifi:
-  use_address: konnected-9b85f3
+  use_address: konnected-9b85f3.goodbit.net
   domain: .goodbit.net # Defaults to .local
-
