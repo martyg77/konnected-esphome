@@ -137,6 +137,10 @@ logger:
 # more: https://esphome.io/components/api.html
 api:
 
+esphome:
+  comment: Konnected 6-Zone Alarm Panel
+
 wifi:
   use_address: konnected-9b85f3.goodbit.net
   domain: .goodbit.net # Defaults to .local
+
